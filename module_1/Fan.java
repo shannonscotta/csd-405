@@ -7,7 +7,7 @@ public class Fan {
         // instance of the fan class from the default constructor
         Fan fanTester1 = new Fan();
 
-        // print override toString method
+        // print override toString method on fanTester1
         System.out.println();
         System.out.println(fanTester1.toString());
 
@@ -47,7 +47,7 @@ public class Fan {
         fanTester2.setRadius(67);
         fanTester2.setOn(false);
 
-        // print override toString method
+        // print override toString method fanTester2
         System.out.println();
         System.out.println(fanTester2.toString());
     }
