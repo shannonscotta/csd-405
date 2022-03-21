@@ -1,57 +1,9 @@
 // Scott Shannon            Assignment 1                15 March 2022
 // The purpose of this code is to write constants, constructors with and without args, override a toString method, use getters, use setters, and "test" the code.
-package module_1;
+package module_2;
 
 public class Fan {
-    public static void main(String[] args) {
-        // instance of the fan class from the default constructor
-        Fan fanTester1 = new Fan();
-
-        // print override toString method on fanTester1
-        System.out.println();
-        System.out.println(fanTester1.toString());
-
-        // test the getters on the default constructor
-        System.out.println();
-        System.out.println("The color is " + fanTester1.getColor() + ".");
-        System.out.println("The speed is " + fanTester1.getSpeed() + ".");
-        System.out.println("The radius is " + fanTester1.getRadius() + ".");
-        System.out.println("The fan is on setting " + fanTester1.getOn() + ".");
-
-        // example of setters working on default constructor
-        fanTester1.setColor("yellow");
-        fanTester1.setSpeed(Fan.MEDIUM);
-        fanTester1.setRadius(37);
-        fanTester1.setOn(true);
-
-        // Write code that displays the functionality of the Fan class methods.
-        System.out.println();
-        System.out.println(fanTester1.toString());
-
-        // instance of the fan class from the argument constructor
-        Fan fanTester2 = new Fan(Fan.SLOW, false, 10, "Red");
-
-        System.out.println();
-        System.out.println(fanTester2.toString());
-
-        // test the getters on the default constructor
-        System.out.println();
-        System.out.println("The color is " + fanTester2.getColor() + ".");
-        System.out.println("The speed is " + fanTester2.getSpeed() + ".");
-        System.out.println("The radius is " + fanTester2.getRadius() + ".");
-        System.out.println("The fan is on setting " + fanTester2.getOn() + ".");
-
-        // example of setters working on argument constructor
-        fanTester2.setColor("black");
-        fanTester2.setSpeed(Fan.FAST);
-        fanTester2.setRadius(67);
-        fanTester2.setOn(false);
-
-        // print override toString method fanTester2
-        System.out.println();
-        System.out.println(fanTester2.toString());
-    }
-
+    
     // Four constants named STOPPED, SLOW, MEDIUM, and FAST. The constants are to
     // hold the values of 0, 1, 2, and 3 respectively.
     static final int STOPPED = 0;
