@@ -1,4 +1,4 @@
-package module_3;
+
 
 /*
 Write test code that creates three instances, two with the same value, and one with a different value.
@@ -122,7 +122,7 @@ public class JoshInteger {
   // The method equals(Integer) which returns true if int values are equal and
   // false if they are not.
   public boolean equals(Integer num) {
-    if (num.valueOf() == josh) {
+    if (num == josh) {
       return true;
     } else {
       return false;
@@ -130,9 +130,20 @@ public class JoshInteger {
   }
 
   public static void main(String[] args) {
-    // test isPrime int 3
+  
     JoshInteger a = new JoshInteger(3);
-    System.out.println(a.equals(new Integer(42)));
-
+    System.out.println("Test if 3 is a prime number. Should be true: "+a.isPrime());
+    System.out.println("Test if 3 is an odd number. Should be true: "+a.isOdd());
+	  System.out.println("Test if 3 is an even number. Should be false: "+a.isEven());
+    System.out.println("Test if the integer 42 equals 3. Should be false: "+a.equals(42));
+    
+    JoshInteger b = new JoshInteger(3);
+    System.out.println("Test if 3 is a prime Integer. Should be true: "+b.isPrime());
+    System.out.println("Test if 3 equals 3. Should be true: "+b.equals(3));
+    System.out.println("Test if 3 is an odd Integer. Should be true: "+b.isOdd());
+	  System.out.println("Test if 3 is an even Integer. Should be false: "+b.isEven());
+    
+    JoshInteger c = new JoshInteger(7);
+    System.out.println("Test if 7 is a prime Integer. Should be true: "+c.isPrime());
   }
 }
