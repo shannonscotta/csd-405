@@ -1,4 +1,6 @@
 // Scott Shannon            Module 6 Assignment -- Division.java       16 April 2022
+// create abstract class Division with company name, account number, and abstract display method used in subclasses
+
 abstract class Division {
 
     protected String divisionName;

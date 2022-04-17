@@ -1,4 +1,6 @@
 // Scott Shannon            Module 6 Assignment -- DomesticDivision.java       16 April 2022
+// subclass with state field and constructor
+
 public class DomesticDivision extends Division {
 
   private String stateDivision;

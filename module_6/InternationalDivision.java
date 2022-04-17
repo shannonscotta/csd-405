@@ -1,4 +1,5 @@
 // Scott Shannon            Module 6 Assignment -- InternationalDivision.java       16 April 2022
+// sub class with country and language field, and constructor
 
 public class InternationalDivision extends Division {
 
