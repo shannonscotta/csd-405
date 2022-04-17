@@ -1,19 +1,27 @@
-package module_6;
+// Scott Shannon            Module 6 Assignment -- UseDivision.java       16 April 2022
 
 public class UseDivision {
-  
-  public UseDivision(){
-    
-  }
-  
   public static void main(String[] args) {
-    
-    InternationalDivision internationalDivisionOne = new InternationalDivision("something", "123", "Canada", "Canadian");
-    InternationalDivision internationalDivisionTwo = new InternationalDivision(("something else", "456", "Germany", "German");
-    
-    DomesticDivision domesticDivisionOne = new DomesticDivision("North Carolina", "Tarheels", "910");
-    DomesticDivision domesticDivisionTwo = new DomesticDivision("Virginia", "Champions", "540");
-    
+
+    InternationalDivision internationalDivisionOne = new InternationalDivision("something", "123", "Canada",
+        "Canadian");
+    InternationalDivision internationalDivisionTwo = new InternationalDivision("something else", "456", "Germany",
+        "German");
+
+    DomesticDivision domesticDivisionOne = new DomesticDivision("Tarheels", "910", "North Carolina");
+    DomesticDivision domesticDivisionTwo = new DomesticDivision("Champions", "540", "Virginia");
+
+    internationalDivisionOne.display();
+    System.out.println("");
+    internationalDivisionTwo.display();
+    System.out.println("");
+
+    domesticDivisionOne.display();
+    System.out.println("");
+    domesticDivisionTwo.display();
+    System.out.println("");
   }
-  
+
+  public UseDivision() {
+  }
 }

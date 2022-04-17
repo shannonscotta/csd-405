@@ -1,11 +1,10 @@
-package module_6;
-
+// Scott Shannon            Module 6 Assignment -- Division.java       16 April 2022
 abstract class Division {
 
-    private String divisionName;
-    private int accountNumber;
+    protected String divisionName;
+    protected String accountNumber;
 
-    public Division(String divisionName, int accountNumber) {
+    public Division(String divisionName, String accountNumber) {
         this.divisionName = divisionName;
         this.accountNumber = accountNumber;
     }
