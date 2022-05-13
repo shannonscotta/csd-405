@@ -1,3 +1,5 @@
+// scott shannon                12 May 2022             Module 8 assignment
+// The purpose of this code is to add cards to a sub dir and randomly select and display four with JavaFX
 package com.example.test;
 
 import javafx.fxml.FXMLLoader;
