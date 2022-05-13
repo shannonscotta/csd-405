@@ -1,10 +1,12 @@
-// scott shannon                12 May 2022             Module 8 assignment
-// The purpose of this code is to add cards to a sub dir and randomly select and display four with JavaFX
+// scott shannon                12 May 2022             Module 10 assignment
+// The purpose of this code is add a refresh button that works to Mod 8 assignment
+
 package com.example.test;
 
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Group;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.GridPane;
@@ -18,6 +20,8 @@ import java.util.Random;
 public class Application extends javafx.application.Application {
     @Override
     public void start(Stage stage) throws IOException {
+      
+      
 
         String[] cardArray = {
                 "48.png", "49.png", "b1fv.png", "8.png", "9.png", "14.png", "28.png", "29.png", "15.png", "17.png",
@@ -82,12 +86,37 @@ public class Application extends javafx.application.Application {
         imageViewTwo.setPreserveRatio(true);
         imageViewThree.setPreserveRatio(true);
         imageViewFour.setPreserveRatio(true);
+      
+      	//add refresh button
+      	Button refreshButton = new Button("Refresh");
+      	
+      	refreshButton.setLayoutX(300);
+      	refreshButton.setLayoutY(300);
+      	refreshButton.setMinHeight(50);
+      	refreshButton.setMinWidth(50);
+      
+        // refreshButton.setOnAction(new EventHandler<ActionEvent>() {
+    	// 	@Override public void handle(ActionEvent e) {
+				
+        //  	int cardOne = new Random().nextInt(cardArray.length);
+        // 		int cardTwo = new Random().nextInt(cardArray.length);
+        // 		int cardThree = new Random().nextInt(cardArray.length);
+        // 		int cardFour = new Random().nextInt(cardArray.length);
+
+        //         ImageView imageViewOne = new ImageView(imageOne);
+        //         ImageView imageViewTwo = new ImageView(imageTwo);
+        //         ImageView imageViewThree = new ImageView(imageThree);
+        //         ImageView imageViewFour = new ImageView(imageFour);
+
+    	// 	}
+		// });
+
 
         //Creating a Group object
-        Group root = new Group(imageViewOne, imageViewTwo, imageViewThree, imageViewFour);
+        Group root = new Group(imageViewOne, imageViewTwo, imageViewThree, imageViewFour, refreshButton);
 
         //Creating a scene object
-        Scene scene = new Scene(root, 310, 125);
+        Scene scene = new Scene(root, 310, 175);
 
         //Setting title to the Stage
         stage.setTitle("Your cards are...");
@@ -100,5 +129,7 @@ public class Application extends javafx.application.Application {
     }
     public static void main(String args[]) {
         launch(args);
+      
+      
     }
 }
